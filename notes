@@ -1,0 +1,31 @@
+completed:
+1. git status - shows all changes made to the file
+2. git add. - saves code to commit later
+3. git commit -m "..." - overview of what weve done
+4. git push origin master - 
+
+
+Avatar character app with Avatar the Last Airbender API
+1. Welcome the user 
+2. Ask for user input- Nation of interest
+3. Return a list of the associated characters with the selected Nation
+4. Ask for user input- character of interest
+5. Returns character specific information for the selected character
+    a. Allies
+    b. Enemies
+    c. Avatar?
+    d. Character id
+6. Accepts an 'exit' input from the user
+7. Accepts a 'Return to homepage' input from the user
+8. 
+
+CLI class- list of all characters and information/ data showing to the terminal
+API class- deals with all the API data/ information
+Character class- deals with all characters and their information
+
+cd
+cd bin
+ls -lah
+run if directories are not the same => chmod +x run
+
+
