@@ -2,9 +2,11 @@ class Characters
 
     @@all = []
 
-    attr_accessor :name
+    attr_accessor :character, :url
 
-    def initialize(attributes)
+    def initialize(character, url)
+        @url = url 
+        @character = character
         @@all << self
     end
 

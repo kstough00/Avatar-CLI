@@ -1,41 +1,48 @@
 class CLI
 
-    def nations
-        ["Fire Nation", "Water Tribe", "Air Nomads", "Earth Kingdom"]
-    end
-
-
     def start
         puts "Welcome to my Avatar pack!"
-        puts "Please select a Nation:"
-        nations.each {|n| puts n }
+        puts "Please choose a Nation by number:"
+        API.nations.each do |index, nation|
+            puts "#{index}: #{nation}"
+        end
+        # nations.each {|n| puts n }
         get_nation
         API.get_characters(nations)
-    end
+        end
+    
 
 
     def get_nation
         input = gets.strip
         check_exit?(input)
-        display_character(input)
+        display_characters(input)
+        character_info_display
         API.get_characters(input)
     end
 
-    def display_character(input)
+    def display_characters(input)
         # input = gets.strip
-        if input == "Earth Kingdom"
+        if input == "4"
             puts "Earth Kingdom Characters"
-        elsif input == "Water Tribe"
+        elsif input == "2"
             puts "Water Tribe Characters"
-        elsif input == "Fire Nation"
+        elsif input == "1"
             puts "ENEMY"
-        elsif input == "Air Nomads"
+        elsif input == "3"
             puts "BOOYA"
         else
             puts "Invalid selection, please try again:"
         end
-        API.get_characters
+        API.get_characters(input)
     end
+
+    def character_info_display(input)
+        input = display_characters(input)
+        puts "What a great choice!"
+        puts #{photo.url}
+    end
+
 
 
 
