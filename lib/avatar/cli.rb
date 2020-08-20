@@ -22,9 +22,10 @@ class CLI
         check_exit?(input)
         get_characters(input)
         character_display(input)
+        get_character_info(input)
         # character_info_display(input)
         API.get_characters(input)
-        character_info_display(input)
+        # character_info_display(input)
         
     end
 
@@ -53,23 +54,26 @@ class CLI
     end
 
     def get_character_info(input)
-
-    end
-
-
-    def character_info_display(input)
-        input = gets.strip
         puts "Character Information:"
-        API.get_characters(input)
-        Characters.all.each.with_index(1) do |name, allies, enemies, photoUrl|
-        puts ""
-        puts "#{name}: #{allies}: #{enemies}: #{photoUrl}"
-    # binding.pry
+        Characters.all.each.with_index(1) do |character,index|
+            puts "#{index}: #{character.allies}: #{character.enemies}: #{character.photoUrl}"
+            binding.pry
         end
     end
 
 
-
+    # def character_info_display(input)
+    #     input = gets.strip.to_i
+    #     puts "Character Information:"
+    #     API.get_characters(input)
+    #     Characters.all.each.with_index(1) do |name, allies, enemies, photoUrl|
+    #     # puts "Allies: #{self.input}"
+    #     # puts "Enemies: #{self.input}"
+    #     # puts "Photo Url: #{self.input}"
+    #     puts "#{name}: #{allies}: #{enemies}: #{photoUrl}"
+    # # binding.pry
+    #     end
+    # end
 
 
     def check_exit?(input)
@@ -77,7 +81,6 @@ class CLI
             exit
         end
     end
-
 
 end
 

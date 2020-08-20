@@ -10,6 +10,7 @@ class API
             enemies = character["enemies"]
             photoUrl = character["photoUrl"]
             Characters.new(name, allies, enemies, photoUrl)
+            Characters
         # binding.pry
         end
     end
