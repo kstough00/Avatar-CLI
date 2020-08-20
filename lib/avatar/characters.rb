@@ -2,11 +2,13 @@ class Characters
 
     @@all = []
 
-    attr_accessor :character, :url
+    attr_accessor :name, :allies, :enemies, :photoUrl
 
-    def initialize(character, url)
-        @url = url 
-        @character = character
+    def initialize(name, allies, enemies, photoUrl)
+        @name = name
+        @allies = allies
+        @enemies = enemies
+        @photoUrl = photoUrl
         @@all << self
     end
 

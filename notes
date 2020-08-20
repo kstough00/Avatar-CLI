@@ -13,11 +13,11 @@ Avatar character app with Avatar the Last Airbender API
 5. Returns character specific information for the selected character
     a. Allies
     b. Enemies
-    c. Avatar?
-    d. Character id
-6. Accepts an 'exit' input from the user
+    c. Photo URL
+    d. Affiliation
+6. Accepts an 'exit' input from the user DONE
 7. Accepts a 'Return to homepage' input from the user
-8. 
+8. Accepts an invalid input from the user and returns them to the previous question
 
 CLI class- list of all characters and information/ data showing to the terminal
 API class- deals with all the API data/ information
