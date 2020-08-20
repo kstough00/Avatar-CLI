@@ -12,7 +12,7 @@ class API
             Characters.new(name, allies, enemies, photoUrl)
         # binding.pry
         end
-        end
+    end
 
 end
 

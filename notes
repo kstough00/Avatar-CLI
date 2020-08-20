@@ -6,18 +6,17 @@ completed:
 
 
 Avatar character app with Avatar the Last Airbender API
-1. Welcome the user 
-2. Ask for user input- Nation of interest
-3. Return a list of the associated characters with the selected Nation
-4. Ask for user input- character of interest
+1. Welcome the user- DONE
+2. Ask for user input- Nation of interest- DONE
+3. Return a list of the associated characters with the selected Nation- DONE
+4. Ask for user input- character of interest- DONE
 5. Returns character specific information for the selected character
     a. Allies
     b. Enemies
     c. Photo URL
     d. Affiliation
-6. Accepts an 'exit' input from the user DONE
-7. Accepts a 'Return to homepage' input from the user
-8. Accepts an invalid input from the user and returns them to the previous question
+6. Accepts an 'exit' input from the user- DONE
+8. Accepts an invalid input from the user and returns them to the previous question- DONE
 
 CLI class- list of all characters and information/ data showing to the terminal
 API class- deals with all the API data/ information
