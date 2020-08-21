@@ -25,7 +25,6 @@ class CLI
         get_character_info(input)
         # character_info_display(input)
         API.get_characters(input)
-        # character_info_display(input)
         
     end
 
@@ -54,11 +53,19 @@ class CLI
     end
 
     def get_character_info(input)
+        input = gets.strip
         puts "Character Information:"
-        Characters.all.each.with_index(1) do |character,index|
-            puts "#{index}: #{character.allies}: #{character.enemies}: #{character.photoUrl}"
-            binding.pry
+        character = Characters.all.find.with_index(1) do |character,index|
+            input.to_i == index
+            # puts "#{index}
+            # binding.pry
         end
+            if character
+                puts "#{character.name}: Allies: #{character.allies}: Enemies: #{character.enemies}: Photo URL: #{character.photoUrl}"
+            else
+                puts "Invalid selection, please try again:"
+            end
+        # binding.pry
     end
 
 

@@ -8,7 +8,7 @@ completed:
 Avatar character app with Avatar the Last Airbender API
 1. Welcome the user- DONE
 2. Ask for user input- Nation of interest- DONE
-3. Return a list of the associated characters with the selected Nation- DONE
+3. Return a list of associated characters with the selected Nation- DONE
 4. Ask for user input- character of interest- DONE
 5. Returns character specific information for the selected character
     a. Allies
