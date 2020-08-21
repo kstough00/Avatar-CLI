@@ -16,16 +16,12 @@ class CLI
         get_nation
     end
 
-
     def get_nation
         input = gets.strip
         check_exit?(input)
         get_characters(input)
         character_display
         choose_again
-        # get_character_info(input)
-        # API.get_characters(input)
-        
     end
 
     def get_characters(input)
@@ -50,9 +46,7 @@ class CLI
             puts ""
             puts "#{index}: #{character.name}"
         end
-        
         get_character_info
-        # binding.pry
     end
 
     def get_character_info
@@ -63,7 +57,6 @@ class CLI
         puts ""
         character = Characters.all.find.with_index(1) do |character,index|
             input == index
-            # binding.pry
         end
             if character
                 puts "Character Information:"
@@ -80,7 +73,6 @@ class CLI
             puts "Invalid selection, please try again:"
             character_display
         end
-        # binding.pry
     end
 
     def choose_again
@@ -94,11 +86,9 @@ class CLI
         else 
             exit
         end
-
     end
 
     def check_exit?(input)
-        # binding.pry
         if input == "exit"
             exit
         end
