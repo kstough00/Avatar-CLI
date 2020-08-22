@@ -1,7 +1,7 @@
 class CLI
 
     @@all = []
-    @@nations = ["Fire Nation", "Earth Kingdom", "Air Nomads", "Water Tribe"]
+    @@nations = ["Air Nomads", "Earth Kingdom", "Fire Nation", "Water Tribe"]
 
     def start
         puts "Welcome to my Avatar pack!"
@@ -26,11 +26,11 @@ class CLI
 
     def get_characters(input)
         if input == "1"
-            API.get_characters("Fire+Nation")
+            API.get_characters("Air+Nomads")
         elsif input == "2"
             API.get_characters("Earth+Kingdom")
         elsif input == "3"
-            API.get_characters("Air+Nomads")
+            API.get_characters("Fire+Nation")
         elsif input == "4"
             API.get_characters("Water+Tribe")
         else
@@ -80,7 +80,7 @@ class CLI
         puts "Would you like to make another selection: yes/no"
         input = gets.strip
         check_exit?(input)
-        if input == "yes"
+        if input.downcase == "yes"
             Characters.all.clear
             start
         else 
