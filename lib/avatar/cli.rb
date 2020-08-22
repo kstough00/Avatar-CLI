@@ -61,8 +61,8 @@ class CLI
             if character
                 puts "Character Information:"
                 puts "Name: #{character.name}"
-                puts "Allies: #{character.allies.join}"
-                puts "Enemies: #{character.enemies.join}"
+                puts "Allies: #{character.allies.join(", ")}"
+                puts "Enemies: #{character.enemies.join(", ")}"
                 puts "Photo URL: #{character.photoUrl}"
             else
                 puts "Invalid selection, please try again:"

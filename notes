@@ -1,3 +1,14 @@
+Intructions:
+1. Run the program: 'ruby bin/run'
+2. Select your nation of interest by number
+    - Your selection returns a list of associated characters with that nation
+3. Select your character of interest by number
+    - Your selection will return the attributes of that specific character
+4. Select 'yes'/'no' to choose another nation/character
+5. Exit at any time during the program: 'exit'
+6. An invalid selection will return you to the previous question
+
+
 completed:
 1. git status - shows all changes made to the file
 2. git add. - saves code to commit later
@@ -10,11 +21,10 @@ Avatar character app with Avatar the Last Airbender API
 2. Ask for user input- Nation of interest- DONE
 3. Return a list of associated characters with the selected Nation- DONE
 4. Ask for user input- character of interest- DONE
-5. Returns character specific information for the selected character
+5. Returns character specific information for the selected character- DONE
     a. Allies
     b. Enemies
     c. Photo URL
-    d. Affiliation
 6. Accepts an 'exit' input from the user- DONE
 8. Accepts an invalid input from the user and returns them to the previous question- DONE
 
